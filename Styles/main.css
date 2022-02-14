@@ -1,0 +1,136 @@
+:root {
+  --text-color: #343a40;
+
+  /* dark blue */
+  --main-color-dark: #34607d;
+
+  /* Cerulean Frost */
+  --main-color: #6096ba;
+  --main-color-light: #5f95ba;
+  --main-color-extra-light: #c4dded;
+
+  /* morning blue */
+  --highlight-color: #839788;
+
+  /* Steel Teal */
+  --teal: #5b7b7a;
+
+  /* Cornflower */
+  --cornflower: #8ecae6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Lora", serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  margin: 2em 0 0.5em;
+}
+
+h1 {
+  color: var(--main-color-dark);
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2,
+h3 {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+picture img {
+  width: 100%;
+}
+
+a:link {
+  color: var(--teal);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:not([href]):hover {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  background-color: var(--teal);
+  color: #fff;
+}
+
+.button {
+  background-color: var(--main-color);
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.button:hover {
+  background-color: var(--main-color-light);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.button:active,
+.button:focus {
+  background-color: var(--main-color-extra-light);
+  box-shadow: 0 0 0 2px var(--main-color-dark) inset;
+  color: var(--main-color-dark);
+}
+
+.contact img {
+  width: 400px;
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 2em;
+  margin-top: 12rem;
+  padding: 12rem 1rem 2rem;
+}
